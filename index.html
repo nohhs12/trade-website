@@ -30,6 +30,8 @@
         .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; }
         .about-card { background: #fff; padding: 40px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .about-card h3 { color: #2b6cb0; margin-bottom: 15px; font-size: 20px; }
+        .about-card p { font-size: 15px; margin-bottom: 10px; }
+        .about-card .en-text { font-size: 14px; color: #718096; font-style: italic; }
 
         /* 취급 품목 */
         .product-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 40px; }
@@ -38,12 +40,14 @@
         .product-list { list-style: none; }
         .product-list li { margin-bottom: 12px; padding-left: 15px; position: relative; }
         .product-list li::before { content: '•'; color: #3182ce; font-weight: bold; position: absolute; left: 0; }
-        .product-sub-list { list-style: none; margin-left: 20px; margin-top: 5px; font-size: 14px; color: #666; }
 
         /* 연락처 */
         .contact-info { background: #1a365d; color: #fff; border-radius: 8px; padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
         .contact-block h3 { font-size: 20px; margin-bottom: 15px; color: #90cdf4; }
         .contact-block p { margin-bottom: 8px; opacity: 0.9; font-size: 15px; }
+        .contact-block ul { list-style: none; margin-top: 5px; }
+        .contact-block ul li { font-size: 14px; opacity: 0.85; margin-bottom: 4px; padding-left: 10px; position: relative; }
+        .contact-block ul li::before { content: '-'; position: absolute; left: 0; }
 
         /* 푸터 */
         footer { background-color: #2d3748; color: #a0aec0; text-align: center; padding: 20px; font-size: 14px; }
@@ -82,77 +86,4 @@
             <div class="about-card">
                 <h3>High Quality</h3>
                 <p>우리는 전 세계 신뢰할 수 있는 파트너사로부터 엄격한 품질 관리를 거친 원원료만을 엄선하여 공급합니다.</p>
-            </div>
-            <div class="about-card">
-                <h3>Competitive Price</h3>
-                <p>산지 직소싱 및 효율적인 유통 구조 혁신을 통해 시장에서 가장 경쟁력 있는 가격을 제안합니다.</p>
-            </div>
-            <div class="about-card">
-                <h3>On-time Delivery</h3>
-                <p>복잡한 국제 물류 및 통관 프로세스를 전문적으로 관리하여 약속된 일정에 맞춰 정확하게 납품합니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" style="background-color: #f0f4f8; max-width: 100%; padding-left: 0; padding-right: 0;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            <h2 class="section-title">Main Handling Items</h2>
-            <div class="product-container">
-                
-                <div class="product-category">
-                    <h3>Agricultural Products (견과류 및 농산물)</h3>
-                    <ul class="product-list">
-                        <li>
-                            <strong>Macadamias (마카다미아)</strong>
-                            <ul class="product-sub-list">
-                                <li>Style 0 (Super Wholes), Style 1 (Wholes), Style 2 (Wholes & Halves)</li>
-                                <li>Style 4 (Halves & Pieces), Style 7 (Small Pieces) 등 전 등급 취급</li>
-                            </ul>
-                        </li>
-                        <li>Hazelnuts, Pistachios, Cashew Nuts, Brazil Nuts, Almonds, Walnuts</li>
-                        <li>Frozen Mangoes (냉동 망고) & Dried Mangoes (건조 망고)</li>
-                        <li>Baked Sweet Potatoes (냉동 군고구마)</li>
-                        <li>Dried Fruits (Prunes, Apricots)</li>
-                        <li>Green Coffee Beans (커피 생두) & Various Spices (향신료)</li>
-                    </ul>
-                </div>
-
-                <div class="product-category">
-                    <h3>Food Ingredients & Dairy (식품 원원료 및 유제품)</h3>
-                    <ul class="product-list">
-                        <li>Sweet Whey Powder (SWP / 스위트 웨이 파우더)</li>
-                        <li>Demineralized Whey Powder (DWP 40% / 70% / 90%)</li>
-                        <li>Non-Dairy Creamer (식물성 크림 - 커피 및 베이커리용)</li>
-                        <li>Instant Coffee Powder (인스턴트 커피 분말)</li>
-                        <li>Cocoa Powder & Milk Proteins</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-info">
-            <div class="contact-block">
-                <h3>Global Office</h3>
-                <p><strong>N&J International</strong> (Sole Proprietorship)</p>
-                <p>Email: <a href="mailto:nnj12@kita.net" style="color: #fff;">nnj12@kita.net</a></p>
-                <p>Business Inquiry: Available 24/7 via Email</p>
-            </div>
-            <div class="contact-block">
-                <h3>Regional Contact</h3>
-                <p><strong>Canada Office:</strong> 1413 Wiliam halton parkway Oakville, Ontario, Canada</p>
-                <p><strong>Korea Operations:</strong> 3 floor, 23-87 Changshin-dong, Jongno-gu, Seoul, South Korea</p>
-                <p>Partnerships: Coordinated with B&G Trading / Adwells</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 N&J International. All Rights Reserved. Custom B2B Sourcing Platform.</p>
-    </footer>
-
-</body>
-</html>
+                <p class="en-text">We carefully select and supply only raw materials that have undergone strict quality
